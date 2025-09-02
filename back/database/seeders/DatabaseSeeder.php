@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\SchoolYear;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
             PaymentTrancheSeeder::class,   // Inscription, 3 tranches + livret médical
             LevelSeeder::class,            // 6ème-Tle (FR) + Form1-US (EN)
             SchoolClassSeeder::class,      // Classes avec barème 2023-2024
+            $this->createSchoolYear(),     // Année scolaire 2025-2026
             TeacherAttendanceSeeder::class, // Présences des enseignants
         ]);
 
@@ -49,5 +51,20 @@ class DatabaseSeeder extends Seeder
         echo "• Salle multimédia connectée Internet\n";
         echo "• Cours de remise à niveau gratuits\n";
         echo "================================================\n\n";
+    }
+
+    private function createSchoolYear()
+    {
+        $this->command->info('📅 Création de l\'année universitaire...');
+        
+        SchoolYear::updateOrCreate(
+            ['name' => '2025-2026'],
+            [
+                'start_date' => '2025-09-01',
+                'end_date' => '2026-07-31',
+                'is_current' => true,
+                'is_active' => true
+            ]
+        );
     }
 }
