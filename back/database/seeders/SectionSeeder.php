@@ -32,7 +32,7 @@ class SectionSeeder extends Seeder
             Section::create($section);
         }
 
-        echo "✅ Sections COBILANO créées avec succès !\n";
+        echo "✅ Sections CBP créées avec succès !\n";
         echo "==========================================\n";
         foreach ($sections as $section) {
             echo "• {$section['name']}: {$section['description']}\n";

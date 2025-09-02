@@ -675,7 +675,7 @@ class UserManagementController extends Controller
                         ' . ($logoBase64 ? "<img src='{$logoBase64}' alt='Logo École' class='school-logo'>" : '') . '
                     </div>
                     <div class="school-info">
-                        <div class="school-name">' . strtoupper($schoolSettings['school_name'] ?? 'COLLEGE POLYVALENT BILINGUE DE DOUALA') . '</div>
+                        <div class="school-name">' . strtoupper($schoolSettings['school_name'] ?? 'COLLÈGE BILINGUE DE LA POINTE') . '</div>
                         <div class="school-details">B.P : 4100 Tél : 233-43-25-47</div>
                         <div class="school-details">DOUALA</div>
                         <div class="school-details">Autorisation de création : N°185/MINESE/SG/DWESTVO/SDPES/SEPTC DU 16 JUIN 2015</div>
@@ -1006,7 +1006,7 @@ class UserManagementController extends Controller
             $html .= '
                 <div class="badge">
                     <div class="badge-header">
-                        <div class="school-name">' . ($schoolSettings['school_name'] ?? 'COLLEGE POLYVALENT BILINGUE DE DOUALA') . '</div>
+                        <div class="school-name">' . ($schoolSettings['school_name'] ?? 'COLLÈGE BILINGUE DE LA POINTE') . '</div>
                     </div>
                     <div class="badge-body">
                         <div class="user-info">
@@ -1224,7 +1224,7 @@ class UserManagementController extends Controller
         <body>
             <div class="badge">
                 <div class="badge-header">
-                    <div class="school-name">' . ($schoolSettings['school_name'] ?? 'COLLEGE POLYVALENT BILINGUE DE DOUALA') . '</div>
+                    <div class="school-name">' . ($schoolSettings['school_name'] ?? 'COLLÈGE BILINGUE DE LA POINTE') . '</div>
                 </div>
                 <div class="badge-body">
                     <div class="user-info">

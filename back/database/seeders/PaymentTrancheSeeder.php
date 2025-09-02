@@ -50,7 +50,7 @@ class PaymentTrancheSeeder extends Seeder
             PaymentTranche::create($tranche);
         }
 
-        echo "✅ Tranches de paiement COBILANO créées avec succès !\n";
+        echo "✅ Tranches de paiement CBP créées avec succès !\n";
         echo "==========================================\n";
         echo "• Frais d'inscription: 3 500 FCFA\n";
         echo "• 1ère Tranche: Variable selon le niveau\n";

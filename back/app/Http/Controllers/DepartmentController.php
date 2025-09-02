@@ -559,7 +559,7 @@ class DepartmentController extends Controller
                 <div class="header-content">
                     ' . ($logoBase64 ? "<img src='{$logoBase64}' alt='Logo École' class='school-logo'>" : '') . '
                     <div>
-                        <div class="school-name">' . strtoupper($schoolSettings['school_name'] ?? 'COLLEGE POLYVALENT BILINGUE DE DOUALA') . '</div>
+                        <div class="school-name">' . strtoupper($schoolSettings['school_name'] ?? 'COLLÈGE BILINGUE DE LA POINTE') . '</div>
                         <div class="school-details">BP : 4100 Tél : 233-43-25-47</div>
                         <div class="school-details">DOUALA</div>
                         <div class="school-details">Autorisation de création : N°185/MINESE/SG/DWESTVO/SDPES/SEPTC DU 16 JUIN 2015</div>
@@ -568,7 +568,7 @@ class DepartmentController extends Controller
                 </div>
                 
                 <div class="academic-year">Année scolaire ' . $academicYear . '</div>
-                <div class="title">Liste du Personnel Enseignant CPBD</div>
+                <div class="title">Liste du Personnel Enseignant CBP</div>
             </div>';
 
         $globalCounter = 1;

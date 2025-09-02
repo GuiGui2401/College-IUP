@@ -418,7 +418,7 @@ const AttendanceReports = () => {
     const now = new Date();
     return `
       <div class="header">
-        <h1>COLLEGE POLYVALENT BILINGUE DE DOUALA</h1>
+        <h1>COLLÈGE BILINGUE DE LA POINTE</h1>
         <h2>Rapport de Présences</h2>
         <p><strong>Période:</strong> ${formatDate(
           filters.startDate

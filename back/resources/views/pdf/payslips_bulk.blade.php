@@ -142,7 +142,7 @@
 <body>
     <div class="page-header">
         <h1>BULLETINS DE PAIE COLLECTIFS</h1>
-        <h2>COLLEGE POLYVALENT BILINGUE DE DOUALA</h2>
+        <h2>COLLÈGE BILINGUE DE LA POINTE</h2>
         <p>Période: {{ $period->libelle_periode }}</p>
         <p>Du {{ $period->date_debut->format('d/m/Y') }} au {{ $period->date_fin->format('d/m/Y') }}</p>
     </div>
@@ -242,7 +242,7 @@
 
     <div class="footer">
         <p>Document généré automatiquement le {{ now()->format('d/m/Y à H:i') }}</p>
-        <p>COLLEGE POLYVALENT BILINGUE DE DOUALA - Système de Gestion de Paie</p>
+        <p>COLLÈGE BILINGUE DE LA POINTE - Système de Gestion de Paie</p>
         <p>Total des bulletins: {{ $payslips->count() }}</p>
     </div>
 </body>

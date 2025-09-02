@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('school_settings', function (Blueprint $table) {
             $table->id();
-            $table->string('school_name')->default('COLLÈGE POLYVALENT BILINGUE DE DOUALA');
+            $table->string('school_name')->default('COLLÈGE BILINGUE DE LA POINTE');
             $table->string('school_motto')->nullable();
             $table->text('school_address')->nullable();
             $table->string('school_phone')->nullable();
@@ -33,7 +33,7 @@ return new class extends Migration
 
         // Insérer les paramètres par défaut
         DB::table('school_settings')->insert([
-            'school_name' => 'COLLÈGE POLYVALENT BILINGUE DE DOUALA',
+            'school_name' => 'COLLÈGE BILINGUE DE LA POINTE',
             'school_address' => 'B.P. 4100, Douala, Cameroun',
             'school_phone' => '233 43 25 47',
             'school_email' => 'contact@cpdyassa.com',

@@ -176,7 +176,7 @@
 <body>
     <div class="header">
         <h1>RÉCAPITULATIF DE PAIE</h1>
-        <h2>COLLEGE POLYVALENT BILINGUE DE DOUALA</h2>
+        <h2>COLLÈGE BILINGUE DE LA POINTE</h2>
         <p style="font-size: 16px; margin: 10px 0;"><strong>{{ $period->libelle_periode }}</strong></p>
     </div>
 
@@ -442,7 +442,7 @@
 
     <div class="footer">
         <p><strong>Document généré automatiquement le {{ now()->format('d/m/Y à H:i') }}</strong></p>
-        <p>COLLEGE POLYVALENT BILINGUE DE DOUALA - Système de Gestion de Paie</p>
+        <p>COLLÈGE BILINGUE DE LA POINTE - Système de Gestion de Paie</p>
         <p>Ce récapitulatif concerne {{ $stats['total_employees'] }} employé(s) pour un montant total de {{ number_format($stats['total_net'], 0, ',', ' ') }} FCFA</p>
     </div>
 </body>

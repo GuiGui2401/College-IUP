@@ -313,7 +313,7 @@ const StaffAttendanceManagement = () => {
                 <path d="M12 48 C12 38, 18 32, 30 32 C42 32, 48 38, 48 48 L48 58 L12 58 Z" fill="white"/>
                 <rect x="10" y="40" width="40" height="3" fill="#0d6efd"/>
                 <text x="30" y="52" font-family="Arial, sans-serif" font-size="6" fill="#0d6efd" text-anchor="middle" font-weight="bold">ÉCOLE</text>
-                <text x="30" y="57" font-family="Arial, sans-serif" font-size="5" fill="#0d6efd" text-anchor="middle">CPBD</text>
+                <text x="30" y="57" font-family="Arial, sans-serif" font-size="5" fill="#0d6efd" text-anchor="middle">CBP</text>
             </svg>
         `;
         return 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgLogo)));
@@ -374,7 +374,7 @@ const StaffAttendanceManagement = () => {
     const generatePrintContent = async () => {
         const currentDate = new Date().toLocaleDateString('fr-FR');
         const periodText = `Du ${formatDate(startDate)} au ${formatDate(endDate)}`;
-        const schoolName = schoolSettings?.school_name || 'COLLÈGE POLYVALENT BILINGUE DE DOUALA';
+        const schoolName = schoolSettings?.school_name || 'COLLÈGE BILINGUE DE LA POINTE';
         
         // Récupérer le logo en base64 comme le fait le backend
         let logoBase64 = '';

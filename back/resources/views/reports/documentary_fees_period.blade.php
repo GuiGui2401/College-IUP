@@ -215,7 +215,7 @@
                     <img src="{{ public_path('storage/' . $school_settings['logo_path']) }}" alt="Logo" class="school-logo">
                 @endif
                 <div class="school-details">
-                    <h1>{{ $school_settings['school_name'] ?? 'COLLÈGE POLYVALENT BILINGUE DE DOUALA' }}</h1>
+                    <h1>{{ $school_settings['school_name'] ?? 'COLLÈGE BILINGUE DE LA POINTE' }}</h1>
                     <p>{{ $school_settings['address'] ?? 'Douala, Cameroun' }}</p>
                     <p>Tél: {{ $school_settings['phone'] ?? 'N/A' }} | Email: {{ $school_settings['email'] ?? 'N/A' }}</p>
                 </div>

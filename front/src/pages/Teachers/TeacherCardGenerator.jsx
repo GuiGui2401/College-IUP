@@ -271,7 +271,7 @@ const TeacherCardGenerator = () => {
                     font-weight: bold;
                     opacity: 0.9;
                 ">
-                    COLLEGE POLYVALENT BILINGUE
+                    COLLEGE COLLÈGE BILINGUE DE LA POINTE BILINGUE
                 </div>
                 
                 <!-- Type de carte -->
