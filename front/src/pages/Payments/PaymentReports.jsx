@@ -251,7 +251,7 @@ const PaymentReports = () => {
     return `
             <div class="report">
                 <div class="report-header text-center" style="margin-bottom: 30px; border-bottom: 2px solid #333; padding-bottom: 20px;">
-                    <h1>COLLÈGE POLYVALENT BILINGUE DE DOUALA</h1>
+                    <h1>COLLÈGE BILINGUE DE LA POINTE</h1>
                     <h2>État des Paiements</h2>
                     <p><strong>Année scolaire:</strong> ${
                       schoolYear?.name || "N/A"

@@ -1353,7 +1353,7 @@ class ReportsController extends Controller
     private function generateReportHtml($reportType, $reportData, $request)
     {
         $workingYear = $this->getUserWorkingYear();
-        $schoolName = "COLLEGE POLYVALENT DE DOUALA";
+        $schoolName = "COLLÈGE BILINGUE DE LA POINTE";
         $currentDate = now()->format('d/m/Y H:i');
 
         $titles = [
@@ -2162,7 +2162,7 @@ class ReportsController extends Controller
 
         // Titres
         $html .= "<div>";
-        $html .= "<h2 style='margin: 0; font-size: 24px; font-weight: bold;'>" . ($schoolSettings['school_name'] ?? 'COLLEGE POLYVALENT BILINGUE DE DOUALA') . "</h2>";
+        $html .= "<h2 style='margin: 0; font-size: 24px; font-weight: bold;'>" . ($schoolSettings['school_name'] ?? 'COLLÈGE BILINGUE DE LA POINTE') . "</h2>";
         $html .= "<h3 style='margin: 5px 0 0 0; color: #0066cc; font-size: 20px;'>DÉTAIL DES ENCAISSEMENTS</h3>";
         $html .= "</div>";
         $html .= "</div>";
@@ -2619,7 +2619,7 @@ class ReportsController extends Controller
                 <div class='header-content'>
                     <img src='" . public_path('assets/logo.png') . "' alt='Logo du Collège' class='logo'>
                     <div class='school-info'>
-                        <div class='school-name'>COLLÈGE POLYVALENT BILINGUE DE DOUALA</div>
+                        <div class='school-name'>COLLÈGE BILINGUE DE LA POINTE</div>
                         <div class='report-title'>DÉTAIL DES PAIEMENTS DES FRAIS DE SCOLARITÉ</div>
                     </div>
                 </div>
@@ -2672,7 +2672,7 @@ class ReportsController extends Controller
             </table>
 
             <div class='footer'>
-                Document généré automatiquement le {$summary['generated_at']} - COLLÈGE POLYVALENT BILINGUE DE DOUALA
+                Document généré automatiquement le {$summary['generated_at']} - COLLÈGE BILINGUE DE LA POINTE
             </div>
         </body>
         </html>";
@@ -3244,7 +3244,7 @@ class ReportsController extends Controller
         $html .= "<title>Paiement des Frais de Scolarité par Classe</title>";
         $html .= "<style>body{font-family:Arial;font-size:12px;}table{width:100%;border-collapse:collapse;}th,td{border:1px solid #ccc;padding:5px;text-align:left;}</style>";
         $html .= "</head><body>";
-        $html .= "<h2>COLLÈGE POLYVALENT BILINGUE DE DOUALA</h2>";
+        $html .= "<h2>COLLÈGE BILINGUE DE LA POINTE</h2>";
         $html .= "<h3>PAIEMENT DES FRAIS DE SCOLARITÉ PAR CLASSE</h3>";
         $html .= "<p>Classe: " . $classInfo['name'] . " | Section: " . $classInfo['section_name'] . "</p>";
         $html .= "<p>Année scolaire: " . $schoolYear['name'] . " | Nombre d'élèves: " . $summary['total_students'] . "</p>";
@@ -3350,9 +3350,9 @@ class ReportsController extends Controller
         if ($logoBase64) {
             $html .= "<img src='{$logoBase64}' class='logo' /><br>";
         }
-        $html .= "<div class='school-name'>COLLÈGE POLYVALENT BILINGUE DE DOUALA</div>";
+        $html .= "<div class='school-name'>COLLÈGE BILINGUE DE LA POINTE</div>";
         $html .= "<div class='info-line'>Tél.: 233 42 26 47</div>";
-        $html .= "<div class='info-line'>Email: cpbdouala@yahoo.fr</div>";
+        $html .= "<div class='info-line'>Email: cbpouala@yahoo.fr</div>";
         $html .= "<div class='report-title'>ÉTAT DES RECOUVREMENTS</div>";
         $html .= "<div class='info-line'>Année scolaire: " . ($schoolYear['name'] ?? 'N/A') . " | Date: " . date('d/m/Y') . "</div>";
         $html .= "</div>";
@@ -4016,7 +4016,7 @@ class ReportsController extends Controller
                             <div class='republic-line'>REPUBLIQUE DU CAMEROUN</div>
                             <div class='motto'>Paix-Travail-Patrie</div>
                             <div class='ministry'>MINISTERE ES ENSEIGNEMENTS SECONDAIRES</div>
-                            <div class='school-name'>COLLEGE POLYVALENT BILINGUE DE DOUALA</div>
+                            <div class='school-name'>COLLÈGE BILINGUE DE LA POINTE</div>
                             <div class='school-details'>
                                 <u>BP:</u>4100 Douala Téléphone : 233 43 25 47<br>
                                 <strong>YASSA</strong>
@@ -4025,7 +4025,7 @@ class ReportsController extends Controller
                         </div>
 
                         <div class='header-center'>
-                                " . ($logoBase64 ? "<img src='{$logoBase64}' class='logo' alt='Logo'>" : "<div class='logo-text'>CPBD</div>") . "
+                                " . ($logoBase64 ? "<img src='{$logoBase64}' class='logo' alt='Logo'>" : "<div class='logo-text'>CBP</div>") . "
                         </div>
 
                         <div class='header-right'>
@@ -4357,7 +4357,7 @@ class ReportsController extends Controller
         <body>
             <div class='header'>
                 <div class='header-left'>
-                    <div><strong>COLLEGE POLYVALENT BILINGUE DE DOUALA</strong></div>
+                    <div><strong>COLLÈGE BILINGUE DE LA POINTE</strong></div>
                     <div>B.P.: 4100</div>
                     <div>Tél.: 233 43 25 47</div>
                     <div>Fax:</div>
@@ -4365,7 +4365,7 @@ class ReportsController extends Controller
                 </div>
 
                 <div class='header-center'>
-                    " . ($logoBase64 ? "<img src='{$logoBase64}' class='logo' alt='Logo'>" : "<div style='width: 60px; height: 60px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;'><span style='font-weight: bold; font-size: 10px;'>CPBD</span></div>") . "
+                    " . ($logoBase64 ? "<img src='{$logoBase64}' class='logo' alt='Logo'>" : "<div style='width: 60px; height: 60px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;'><span style='font-weight: bold; font-size: 10px;'>CBP</span></div>") . "
                     <div class='title'>ETAT DES RECOUVREMENTS</div>
                 </div>
 

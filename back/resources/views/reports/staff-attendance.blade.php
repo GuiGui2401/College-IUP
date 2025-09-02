@@ -148,7 +148,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>COLLÈGE POLYVALENT BILINGUE DE DOUALA - Rapport de Présences du Personnel</h1>
+        <h1>COLLÈGE BILINGUE DE LA POINTE - Rapport de Présences du Personnel</h1>
     </div>
     
     <table class="info-table">
@@ -284,7 +284,7 @@
     
     <div class="footer">
         <p>Document généré le {{ $generatedAt }}</p>
-        <p>Système de Gestion Scolaire - CPBD</p>
+        <p>Système de Gestion Scolaire - CBP</p>
     </div>
 </body>
 </html>

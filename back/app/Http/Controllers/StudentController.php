@@ -745,7 +745,7 @@ class StudentController extends Controller
 <body>
     <div class="header">
         ' . ($logoBase64 ? "<img src='{$logoBase64}' class='logo' alt='Logo'>" : "") . '
-        <h1>' . ($schoolSettings->school_name ?? 'COLLEGE POLYVALENT BILINGUE DE DOUALA') . '</h1>
+        <h1>' . ($schoolSettings->school_name ?? 'COLLÈGE BILINGUE DE LA POINTE') . '</h1>
         <p>Liste des Élèves</p>
     </div>
 
@@ -812,7 +812,7 @@ class StudentController extends Controller
 
     <div class="footer">
         <p>Document généré automatiquement le ' . date('d/m/Y à H:i:s') . '</p>
-        <p>COLLEGE POLYVALENT BILINGUE DE DOUALA</p>
+        <p>COLLÈGE BILINGUE DE LA POINTE</p>
     </div>
 </body>
 </html>';

@@ -548,7 +548,7 @@ function Sidebar({ isCollapsed, onToggle, isOpen, setIsOpen }) {
         >
           <img
             src={getLogoSrc()}
-            alt={`${schoolSettings.school_name || "CPBD"} Logo`}
+            alt={`${schoolSettings.school_name || "CBP"} Logo`}
             style={{
               width: "40px",
               height: "40px",
@@ -565,7 +565,7 @@ function Sidebar({ isCollapsed, onToggle, isOpen, setIsOpen }) {
                 {schoolSettings.school_name
                   ?.split(" ")
                   .map((word) => word.charAt(0))
-                  .join("") || "CPBD"}
+                  .join("") || "CBP"}
               </div>
               <div
                 style={{
@@ -574,7 +574,7 @@ function Sidebar({ isCollapsed, onToggle, isOpen, setIsOpen }) {
                 }}
               >
                 {schoolSettings.school_name ||
-                  "College Polyvalent Bilingue de Douala"}
+                  "COLLÈGE BILINGUE DE LA POINTE"}
               </div>
             </div>
           )}

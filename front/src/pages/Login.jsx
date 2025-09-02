@@ -116,7 +116,7 @@ const Login = () => {
                         />
                     </div>
                     <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                        CPBD
+                        CBP
                     </h1>
                     <p className="text-gray-600">
                         Système de Gestion de Collège
@@ -249,7 +249,7 @@ const Login = () => {
                 {/* Footer */}
                 <div className="text-center mt-8">
                     <p className="text-sm text-gray-500">
-                        ©2025 Collège Polyvalent Bilingue de Douala. Tous droits réservés.
+                        ©2025 COLLÈGE BILINGUE DE LA POINTE. Tous droits réservés.
                     </p>
                 </div>
             </div>

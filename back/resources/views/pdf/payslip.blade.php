@@ -164,7 +164,7 @@
 <body>
     <div class="header">
         <h1>BULLETIN DE PAIE</h1>
-        <h2>COLLEGE POLYVALENT BILINGUE DE DOUALA</h2>
+        <h2>COLLÈGE BILINGUE DE LA POINTE</h2>
         <p>Période: {{ $payslip->period->libelle_periode }}</p>
     </div>
 
@@ -316,7 +316,7 @@
 
     <div class="footer">
         <p>Ce bulletin de paie a été généré automatiquement le {{ now()->format('d/m/Y à H:i') }}</p>
-        <p>COLLEGE POLYVALENT BILINGUE DE DOUALA - Système de Gestion de Paie</p>
+        <p>COLLÈGE BILINGUE DE LA POINTE - Système de Gestion de Paie</p>
     </div>
 </body>
 </html>

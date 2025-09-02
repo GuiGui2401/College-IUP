@@ -317,7 +317,7 @@ class InventoryService {
       return {
         metadata: {
           exportDate: new Date().toISOString(),
-          school: 'Collège Polyvalent Bilingue de Douala',
+          school: 'COLLÈGE BILINGUE DE LA POINTE',
           totalArticles: articles.length,
           exportVersion: '1.0'
         },

@@ -56,7 +56,7 @@ class LevelSeeder extends Seeder
             }
         }
 
-        echo "✅ Niveaux COBILANO créés avec succès !\n";
+        echo "✅ Niveaux CBP créés avec succès !\n";
         echo "==========================================\n";
         echo "Section Francophone:\n";
         echo "• 1er Cycle: 6ème, 5ème, 4ème, 3ème\n";

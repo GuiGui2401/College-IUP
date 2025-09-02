@@ -25,7 +25,7 @@ class SchoolClassSeeder extends Seeder
             $schoolClass = SchoolClass::create([
                 'name' => $level->name,
                 'level_id' => $level->id,
-                'description' => "Classe de {$level->name} - COBILANO",
+                'description' => "Classe de {$level->name} - CBP",
                 'is_active' => true
             ]);
 
@@ -40,11 +40,11 @@ class SchoolClassSeeder extends Seeder
                 ]);
             }
 
-            // Configurer les montants de paiement selon le barème COBILANO 2023-2024
+            // Configurer les montants de paiement selon le barème CBP 2023-2024
             $this->configurePaymentsForClass($schoolClass, $tranches, $level);
         }
 
-        echo "✅ Classes COBILANO créées avec succès !\n";
+        echo "✅ Classes CBP créées avec succès !\n";
         echo "==========================================\n";
         echo "Barème scolarité 2023-2024 appliqué:\n";
         echo "• Form 1/6ème: 120 000 FCFA (65k+35k+20k)\n";
@@ -86,7 +86,7 @@ class SchoolClassSeeder extends Seeder
     private function configurePaymentsForClass($schoolClass, $tranches, $level)
     {
         foreach ($tranches as $tranche) {
-            // Définir les montants selon le barème COBILANO 2023-2024
+            // Définir les montants selon le barème CBP 2023-2024
             $amounts = $this->getAmountsForLevel($level->name, $tranche->name);
             
             ClassPaymentAmount::create([
@@ -100,7 +100,7 @@ class SchoolClassSeeder extends Seeder
 
     private function getAmountsForLevel($levelName, $trancheName)
     {
-        // Barème officiel COBILANO 2023-2024
+        // Barème officiel CBP 2023-2024
         $scolarityAmounts = [
             // Section Francophone
             '6ème' => ['1ere' => 65000, '2eme' => 35000, '3eme' => 20000],
@@ -124,7 +124,7 @@ class SchoolClassSeeder extends Seeder
         switch ($trancheName) {
             case 'Frais d\'inscription':
                 return [
-                    'amount' => 3500, // Montant fixe COBILANO
+                    'amount' => 3500, // Montant fixe CBP
                     'required' => true
                 ];
             case '1ère Tranche':
@@ -144,7 +144,7 @@ class SchoolClassSeeder extends Seeder
                 ];
             case 'Livret médical':
                 return [
-                    'amount' => 1000, // Montant fixe COBILANO
+                    'amount' => 1000, // Montant fixe CBP
                     'required' => true
                 ];
             default:
